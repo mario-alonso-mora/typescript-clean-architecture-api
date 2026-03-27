@@ -1,12 +1,23 @@
 # TypeScript Clean Architecture API
 
-REST API built with TypeScript and Express following a clean and scalable three-layer architecture.
+Scalable REST API built with TypeScript and Express following a clean three-layer architecture.  
+Designed to demonstrate separation of concerns, maintainability and extensibility in backend systems.
 
-## Architecture
+---
 
-- Controllers (HTTP layer)
-- Services (business logic)
-- Repositories (data access)
+## Architecture Overview
+
+This project follows a structured architecture divided into three main layers:
+
+- **Controllers** → Handle HTTP requests and responses. Responsible for input validation and delegating logic.
+- **Services** → Contain business logic and application rules.
+- **Repositories** → Manage data access and persistence.
+
+### Request Flow
+
+Client → Controller → Service → Repository → Data Source
+
+---
 
 ## Tech Stack
 
@@ -14,21 +25,16 @@ REST API built with TypeScript and Express following a clean and scalable three-
 - Node.js
 - Express
 
-## Features
+---
 
-- Modular structure
+## Key Principles
+
 - Separation of concerns
-- Scalable architecture
-- Ready for extension and integration
+- Modular design
+- Scalable structure
+- Maintainable codebase
+- Ready for integration with databases or external services
+
+---
 
 ## Project Structure
-
-/src
-  /controllers
-  /services
-  /repositories
-  /routes
-
-## Purpose
-
-This project demonstrates how to design a scalable backend API using clean architecture principles.
